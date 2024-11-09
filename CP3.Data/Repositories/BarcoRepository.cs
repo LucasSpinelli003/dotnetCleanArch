@@ -29,8 +29,8 @@ namespace CP3.Data.Repositories
             {
                 entity.Nome = barco.Nome;
                 entity.Ano = barco.Ano;
-                entity.Estado = barco.Estado;
-                entity.Preco = barco.Preco;
+                entity.Modelo = barco.Modelo;
+                entity.Tamanho = barco.Tamanho;
                 
                 _context.Barco.Update(entity);
                 _context.SaveChanges();
@@ -52,7 +52,7 @@ namespace CP3.Data.Repositories
 
         }
 
-        public IEnumerable<BarcoEntity>? ObterTodos()
+        public IEnumerable<BarcoEntity> ObterTodos()
         {
              var entity = _context.Barco.ToList();
 

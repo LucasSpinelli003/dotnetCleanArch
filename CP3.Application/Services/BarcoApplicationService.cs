@@ -19,8 +19,8 @@ namespace CP3.Application.Services
             {
                 Nome = entity.Nome,
                 Ano = entity.Ano,
-                Estado = entity.Estado,
-                Preco = entity.Preco,
+                Modelo = entity.Modelo,
+                Tamanho = entity.Tamanho,
             });
 
         }
@@ -32,8 +32,8 @@ namespace CP3.Application.Services
                 Id = id,
                 Nome = entity.Nome,
                 Ano = entity.Ano,
-                Estado = entity.Estado,
-                Preco = entity.Preco,
+                Modelo = entity.Modelo,
+                Tamanho = entity.Tamanho,
             });
 
         }
@@ -43,7 +43,7 @@ namespace CP3.Application.Services
             return _repository.ObterPorId(id);
         }
 
-        public IEnumerable<BarcoEntity> ObterTodosBarcos()
+        public IEnumerable<BarcoEntity>? ObterTodosBarcos()
         {
             return _repository.ObterTodos();
         }

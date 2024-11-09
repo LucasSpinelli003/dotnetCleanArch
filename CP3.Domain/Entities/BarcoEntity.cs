@@ -8,9 +8,9 @@ namespace CP3.Domain.Entities
     {
         [Key]
         public int Id { get; set; }
-        public string? Nome { get; set; }
+        public string Nome { get; set; }
         public int Ano { get; set; }
-        public string? Estado { get; set; }
-        public double  Preco { get; set; }
+        public string Modelo { get; set; }
+        public double  Tamanho { get; set; }
     }
 }
